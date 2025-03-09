@@ -1,0 +1,22 @@
+{% extends 'base_with_bootstrap.html' %}
+{% load bootstrap5 %}
+
+{% block bootstrap5_title %}Update{% endblock %}
+
+{% block title %}
+    You are updating details for
+    <h3>
+        {{ airline.airline_name }} {{ airline.airline_code}}
+    </h3>
+    <!-- Menu buttons -->
+    {% include 'snippets/three_buttons_airlines.html' %}
+{% endblock %}
+
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+            {%  bootstrap_form form %}
+        <br><br>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base_with_bootstrap.html' %}
+{% load bootstrap5 %}
+
+{% block bootstrap5_title %}Create{% endblock %}
+
+{% block title %}Add new airline to the list{% endblock %}
+
+{% block content %}
+    <form method="post" action="">
+        {% csrf_token %}
+            {% bootstrap_form form %}
+        <br><br>
+        <button type="submit" class="btn btn-primary">Odeslat</button>
+    </form>
+{% endblock %}

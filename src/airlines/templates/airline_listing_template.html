@@ -1,0 +1,68 @@
+{% extends 'base_with_bootstrap.html' %}
+{% load bootstrap5 %}
+
+{% block bootstrap5_title %}List Airlines{% endblock %}
+
+{% block title %}
+    List of major airlines<br>
+    <!-- Menu buttons -->
+    <div class="d-flex justify-content-end">
+        <a href="{% url 'home' %}" class="btn btn-dark me-2">Home Page</a>
+        <a href="{% url 'airlines:create-view' %}" class="btn btn-success">Create New</a>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-2">
+            <b>list number</b>
+        </div>
+        <div class="col-2">
+            <b>Name</b>
+        </div>
+        <div class="col-2">
+            <b>Code</b>
+        </div>
+        <div class="col-2">
+            <b>Founded</b>
+        </div>
+        <div class="col-2">
+            <b>Headquarters</b>
+        </div>
+    </div>
+    <hr>
+    {% for airline in airlines %}
+        <div class="row my-2">
+            <div class="col-2">
+                ({{ airline.pk }})
+            </div>
+            <div class="col-2">
+                {{ airline.airline_name }}
+            </div>
+            <div class="col-2">
+                {{ airline.airline_code }}
+            </div>
+            <div class="col-2">
+                {{ airline.founded }}
+            </div>
+            <div class="col-2">
+                {{ airline.headquarters_city_code }}
+            </div>
+            <!-- Dropdown with options -->
+            <div class=col>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        options
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="{% url 'airlines:detail-view' airline.pk %}">Detail</a></li>
+                        <li><a class="dropdown-item" href="{% url 'airlines:delete-view' airline.pk %}">Delete</a></li>
+                        <li><a class="dropdown-item" href="{% url 'airlines:update-view' airline.pk %}">Update</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base_with_bootstrap.html' %}
+{% load bootstrap5 %}
+
+{% block bootstrap5_title %}Detail{% endblock %}
+
+{% block title %}
+    Airline detail page
+    <!-- Menu buttons -->
+    {% include 'snippets/three_buttons_airlines.html' %}
+    <h3>{{ airline.airline_name }} ({{ airline.airline_code }})</h3>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <b>Name: </b>
+        </div>
+        <div class="col">
+            <b>Code: </b>
+        </div>
+        <div class="col">
+            <b>Founded: </b>
+        </div>
+        <div class="col">
+            <b>Headquarters city code: </b>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {{ airline.airline_name }}
+        </div>
+        <div class="col">
+            {{ airline.airline_code }}
+        </div>
+        <div class="col">
+            {{ airline.founded }}
+        </div>
+        <div class="col">
+            {{ airline.headquarters_city_code }}
+        </div>
+    </div>
+    <hr>
+    <!-- Update Delete buttons -->
+    <div class="row">
+        <div class="d-flex">
+            <a href="{% url 'airlines:update-view' airline.pk %}" class="btn btn-warning me-2">Update</a>
+            <a href="{% url 'airlines:delete-view' airline.pk %}" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+
+{% endblock %}
