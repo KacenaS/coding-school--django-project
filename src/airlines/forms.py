@@ -19,6 +19,24 @@ class AirlineModelForm(forms.ModelForm):
             "headquarters_city_code": "Enter three letter city code",
         }
 
+class AirportModelForm(forms.ModelForm):
+    class Meta:
+        model = Airport
+        fields = "__all__"
+        labels = {
+            "airport_name": "Airport name",
+            "country_code": "Country code",
+            "city_code": "City code",
+            "airport_code": "Airport code",
+        }
+        help_texts = {
+            "airport_name": "Enter full airport name",
+            "country_code": "Enter two letter country code",
+            "city_code": "Enter three letter city code",
+            "airport_code": "Enter three letter airport code",
+
+        }
+
 class JustButtonForm(forms.Form):
     """
     Empty form for just button needs

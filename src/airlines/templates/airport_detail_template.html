@@ -6,7 +6,7 @@
 {% block title %}
     Airline detail page
     <!-- Menu buttons -->
-    {% include 'snippets/three_buttons_airlines.html' %}
+    {% include 'snippets/three_buttons_airports.html' %}
     <h3>{{ airport.airport_name }} ({{ airport.airport_code }})</h3>
 {% endblock %}
 
@@ -43,8 +43,8 @@
     <!-- Update Delete buttons -->
     <div class="row">
         <div class="d-flex">
-            <a href="{% url 'airlines:update-view' airline.pk %}" class="btn btn-warning me-2">Update</a>
-            <a href="{% url 'airlines:delete-view' airline.pk %}" class="btn btn-danger">Delete</a>
+            <a href="{% url 'airlines:airport-update-view' airport.pk %}" class="btn btn-warning me-2">Update</a>
+            <a href="{% url 'airlines:airport-delete-view' airport.pk %}" class="btn btn-danger">Delete</a>
         </div>
     </div>
 
