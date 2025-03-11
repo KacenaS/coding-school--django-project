@@ -4,7 +4,7 @@
 {% block bootstrap5_title %}List Airlines{% endblock %}
 
 {% block title %}
-    List of major airlines<br>
+    List of major airlines
     <!-- Menu buttons -->
     <div class="d-flex justify-content-end">
         <a href="{% url 'home' %}" class="btn btn-dark me-2">Home Page</a>
@@ -14,6 +14,9 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Search bar -->
+    {%  include 'snippets/search_bar.html' %}
+
     <div class="row">
         <div class="col-2">
             <b>list number</b>
@@ -38,7 +41,7 @@
                 ({{ airline.pk }})
             </div>
             <div class="col-2">
-                {{ airline.airline_name }}
+                <a href="{% url 'airlines:detail-view' airline.pk %}" class="text-secondary text-decoration-underline">{{ airline.airline_name }}</a>
             </div>
             <div class="col-2">
                 {{ airline.airline_code }}
@@ -57,7 +60,6 @@
                     </a>
 
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="{% url 'airlines:detail-view' airline.pk %}">Detail</a></li>
                         <li><a class="dropdown-item" href="{% url 'airlines:delete-view' airline.pk %}">Delete</a></li>
                         <li><a class="dropdown-item" href="{% url 'airlines:update-view' airline.pk %}">Update</a></li>
                     </ul>

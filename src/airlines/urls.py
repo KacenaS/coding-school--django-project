@@ -21,17 +21,23 @@ from django.urls import path, include
 # My imports
 from airlines.views import  AirlinesListingView, AirlinesDetailView, AirlinesCreateView, AirlineDeleteView, AirlinesUpdateView
 #aiport imports
-from airlines.views import AirportListView
+from airlines.views import AirportListView, AirportDetailView, AirportsCreateView, AirportDeleteView, AirportsUpdateView
 
 app_name = "airlines"
 
 urlpatterns = [
     #AIRLINES
     path("list/", AirlinesListingView.as_view(), name="list-view"),
+    path("list/<str:start_str>/", AirlinesListingView.as_view(), name="filtered-list-view"),
     path("detail/<int:pk>/", AirlinesDetailView.as_view(), name="detail-view"),
     path("create/", AirlinesCreateView.as_view(), name="create-view"),
     path("delete/<int:pk>/", AirlineDeleteView.as_view(), name="delete-view"),
     path("update/<int:pk>/", AirlinesUpdateView.as_view(), name="update-view"),
     # AIRPORTS
     path("airport-list/", AirportListView.as_view(), name="airport-list-view"),
+    path("airport-list/<str:start_str>", AirportListView.as_view(), name="filtered-airport-list-view"),
+    path("airport-detail/<int:pk>/", AirportDetailView.as_view(), name="airport-detail-view"),
+    path("airport-create/", AirportsCreateView.as_view(), name="airport-create-view"),
+    path("airport-delete/<int:pk>/", AirportDeleteView.as_view(), name="airport-delete-view"),
+    path("airport-update/<int:pk>/", AirportsUpdateView.as_view(), name="airport-update-view"),
 ]

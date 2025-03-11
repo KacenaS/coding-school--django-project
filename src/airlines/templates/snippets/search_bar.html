@@ -1,0 +1,11 @@
+<div class="row mb-3">
+    <div class="col-8">
+        <form method="GET" action="
+            {% if request.GET.start_str %}{% url 'airlines:filtered-list-view' start_str=request.GET.start_str %}
+            {% else %}{% url 'airlines:list-view' %}
+            {% endif %}">
+            <input type="text" name="start_str" placeholder="Search airlines..." value="{{ request.GET.start_str }}">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</div>

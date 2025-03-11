@@ -8,12 +8,15 @@
     <!-- Menu buttons -->
     <div class="d-flex justify-content-end">
         <a href="{% url 'home' %}" class="btn btn-dark me-2">Home Page</a>
-        <a href="{% url 'airlines:create-view' %}" class="btn btn-success">Create New</a>
+        <a href="{% url 'airlines:airport-create-view' %}" class="btn btn-success">Create New</a>
     </div>
 
 {% endblock %}
 
 {% block content %}
+    <!-- Search bar -->
+    {%  include 'snippets/search_bar_airports.html' %}
+
     <div class="row">
         <div class="col-2">
             <b>list number</b>
@@ -38,7 +41,7 @@
                 ({{ airport.pk }})
             </div>
             <div class="col-2">
-                {{ airport.airport_name }}
+                <a href="{% url 'airlines:airport-detail-view' airport.pk %}" class="text-secondary text-decoration-underline">{{ airport.airport_name }}</a>
             </div>
             <div class="col-2">
                 {{ airport.country_code }}
@@ -50,16 +53,15 @@
                 {{ airport.airport_code }}
             </div>
             <!-- Dropdown with options -->
-            <<div class=col>
+            <div class=col>
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         options
                     </a>
 
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="{% url 'airlines:detail-view' airport.pk %}">Detail</a></li>
-                        <li><a class="dropdown-item" href="{% url 'airlines:delete-view' airport.pk %}">Delete</a></li>
-                        <li><a class="dropdown-item" href="{% url 'airlines:update-view' airport.pk %}">Update</a></li>
+                        <li><a class="dropdown-item" href="{% url 'airlines:airport-delete-view' airport.pk %}">Delete</a></li>
+                        <li><a class="dropdown-item" href="{% url 'airlines:airport-update-view' airport.pk %}">Update</a></li>
                     </ul>
                 </div>
             </div>
