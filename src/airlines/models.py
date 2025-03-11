@@ -2,9 +2,12 @@ from django.db import models
 from datetime import datetime
 from django.urls import reverse_lazy
 
-class Aliance(models.Model):
-    """Shows to which aliance does each airline belong to"""
-    name = models.CharField(max_length=50)
+class Alliance(models.Model):
+    """Shows to which alliance does each airline belong to"""
+    name = models.CharField(max_length=50, unique=True)
+
+    def __str__(self):
+        return self.name
 
 # Basic airline model
 class Airline(models.Model):
@@ -15,11 +18,20 @@ class Airline(models.Model):
     # headquarters_city_name = models.CharField(max_length=100)
     # headquarters_country = models.CharField(max_length=2)
 
-    # relationships
-    # aliance = models.ManyToManyField(Aliance, null=True, blank=True)
-    # many-to-many relationship to airports missing !
-    # aliance = models.ManyToManyField(Aliance) ?
-    # airports = models.ManyToManyField('Airport') ?
+    # Many-to-many relationship with Alliance
+    alliance = models.ManyToManyField(Alliance,related_name='airline_alliance', blank=True)
+    # Many-to-many relationship with Airport
+    airports = models.ManyToManyField('Airport', related_name='airlines', blank=True)
+
+    def get_absolute_url(self):
+        """Returns the url to access a detail page of this model"""
+        return reverse('airlines:detail-view', kwargs={'pk': self.pk})
+
+    def alliance_list_as_string(self):
+        """Returns a string representation of alliance instances"""
+        alliances = self.alliance.all()
+        return ", ".join(alliance.name for alliance in alliances)
+
 
     # fuction to update the airline code to 3  digits
     """
@@ -47,8 +59,8 @@ class Airport(models.Model):
     city_code = models.CharField(max_length=3)
     airport_code = models.CharField(max_length=4, unique=True)
 
-    # relationships
-    # many-to-many relationship to airlines missing !
+    def get_absolute_url(self):
+        return reverse_lazy('airlines:airport-detail-view', kwargs={'pk': self.pk})
 
     def __str__(self):
         return self.airport_name

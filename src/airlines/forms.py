@@ -1,6 +1,6 @@
 from django import forms
 from .models import Airline, Airport
-
+from django.core.exceptions import ValidationError
 
 class AirlineModelForm(forms.ModelForm):
     class Meta:
@@ -29,6 +29,9 @@ class AirportModelForm(forms.ModelForm):
             "city_code": "City code",
             "airport_code": "Airport code",
         }
+        widgets = {
+            'alliances': forms.SelectMultiple(attrs={'class': 'form-control'}),
+        }
         help_texts = {
             "airport_name": "Enter full airport name",
             "country_code": "Enter two letter country code",
@@ -36,6 +39,15 @@ class AirportModelForm(forms.ModelForm):
             "airport_code": "Enter three letter airport code",
 
         }
+
+    def clean(self):
+        """Validate if user is entering exactly 3 characters"""
+        cleaned_data = super().clean()
+        city_code = cleaned_data.get("city_code")
+
+        if len(city_code) != 3:
+            raise ValidationError('Entry must be exactly 3 characters.')
+
 
 class JustButtonForm(forms.Form):
     """

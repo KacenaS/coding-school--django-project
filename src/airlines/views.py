@@ -27,10 +27,9 @@ class AirlinesListingView(ListView):
         # test if it is passing the parameters
         print(self.kwargs)
 
-        start_str = self.kwargs.get('start_str')
+        start_str = self.request.GET.get('start_str')
         if start_str:
             queryset = queryset.filter(
-                Q(airline_name__startswith=start_str) |
                 Q(airline_name__icontains=start_str) |
                 Q(airline_code__icontains=start_str)
             )
@@ -49,10 +48,7 @@ class AirlinesCreateView(CreateView):
     form_class = AirlineModelForm
 
     def get_success_url(self):
-        # Access the updated object using self.object
-        pk = self.object.pk
-        # Generate the success URL dynamically using the object's pk
-        return reverse_lazy("airlines:detail-view", kwargs={"pk": pk})
+        return self.object.get_absolute_url()
 
 class AirlineDeleteView(DeleteView):
     template_name = "airline_delete_template.html"
@@ -67,10 +63,7 @@ class AirlinesUpdateView(UpdateView):
     form_class = AirlineModelForm
 
     def get_success_url(self):
-        # Access the updated object using self.object
-        pk = self.object.pk
-        # Generate the success URL dynamically using the object's pk
-        return reverse_lazy("airlines:detail-view", kwargs={"pk": pk})
+        return self.object.get_absolute_url()
 #------------------------------------------------------------------------
 # AIRPORT VIEWS
 #------------------------------------------------------------------------
@@ -80,18 +73,16 @@ class AirportListView(ListView):
     context_object_name = "airports"
 
     def get_queryset(self):
+        """Fetches customer imput for filtering airline data"""
         queryset = super().get_queryset()
 
-        # test if it is passing the parameters
-        print(self.kwargs)
+        start_str = self.request.GET.get('start_str')
 
-        start_str = self.kwargs.get('start_str')
-        print(self.request.GET)
         if start_str:
-            queryset = queryset.filter(airport_name__startswith=start_str)
-            #     Q(airport_name__icontains=start_str) |
-            #     Q(airport_code__icontains=start_str)
-            # )
+            queryset = queryset.filter(
+                Q(airport_name__icontains=start_str) |
+                Q(airport_code__icontains=start_str)
+            )
         return queryset
 
 class AirportDetailView(DetailView):
@@ -104,10 +95,7 @@ class AirportsCreateView(CreateView):
     form_class = AirportModelForm
 
     def get_success_url(self):
-        # Access the updated object using self.object
-        pk = self.object.pk
-        # Generate the success URL dynamically using the object's pk
-        return reverse_lazy("airlines:airport-detail-view", kwargs={"pk": pk})
+        return self.object.get_absolute_url()
 
 class AirportDeleteView(DeleteView):
     template_name = "airport_delete_view.html"
@@ -121,7 +109,4 @@ class AirportsUpdateView(UpdateView):
     form_class = AirportModelForm
 
     def get_success_url(self):
-        # Access the updated object using self.object
-        pk = self.object.pk
-        # Generate the success URL dynamically using the object's pk
-        return reverse_lazy("airlines:airport-detail-view", kwargs={"pk": pk})
+        return self.object.get_absolute_url()
