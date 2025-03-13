@@ -1,0 +1,1742 @@
+[
+  {
+    "model": "airlines.airline",
+    "pk": 1,
+    "fields": {
+      "airline_name": "Aegean Airlines",
+      "airline_code": "390",
+      "founded": "1987-01-01",
+      "headquarters_city_code": "ATH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 2,
+    "fields": {
+      "airline_name": "Aer Lingus",
+      "airline_code": "053",
+      "founded": "1936-04-15",
+      "headquarters_city_code": "DUB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 3,
+    "fields": {
+      "airline_name": "Aeroflot",
+      "airline_code": "555",
+      "founded": "1923-02-09",
+      "headquarters_city_code": "MOW"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 4,
+    "fields": {
+      "airline_name": "Aerolineas Argentinas",
+      "airline_code": "044",
+      "founded": "1950-05-14",
+      "headquarters_city_code": "BUE"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 5,
+    "fields": {
+      "airline_name": "Aeromexico",
+      "airline_code": "139",
+      "founded": "1934-09-14",
+      "headquarters_city_code": "MEX"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 6,
+    "fields": {
+      "airline_name": "Air Arabia",
+      "airline_code": "509",
+      "founded": "2003-02-03",
+      "headquarters_city_code": "SHJ"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 7,
+    "fields": {
+      "airline_name": "Air Astana",
+      "airline_code": "669",
+      "founded": "2001-08-29",
+      "headquarters_city_code": "ALA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 8,
+    "fields": {
+      "airline_name": "Air Austral",
+      "airline_code": "406",
+      "founded": "1975-01-01",
+      "headquarters_city_code": "RUN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 9,
+    "fields": {
+      "airline_name": "Air Baltic",
+      "airline_code": "657",
+      "founded": "1995-08-28",
+      "headquarters_city_code": "RIX"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 10,
+    "fields": {
+      "airline_name": "Air Belgium",
+      "airline_code": "974",
+      "founded": "2016-02-01",
+      "headquarters_city_code": "CRL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 11,
+    "fields": {
+      "airline_name": "Air Canada",
+      "airline_code": "014",
+      "founded": "1937-04-10",
+      "headquarters_city_code": "YUL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 12,
+    "fields": {
+      "airline_name": "Air Caraibes",
+      "airline_code": "387",
+      "founded": "2000-01-01",
+      "headquarters_city_code": "PTP"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 13,
+    "fields": {
+      "airline_name": "Air China",
+      "airline_code": "999",
+      "founded": "1988-07-01",
+      "headquarters_city_code": "PEK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 14,
+    "fields": {
+      "airline_name": "Air Corsica",
+      "airline_code": "946",
+      "founded": "1989-01-01",
+      "headquarters_city_code": "AJA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 15,
+    "fields": {
+      "airline_name": "Air Dolomiti",
+      "airline_code": "618",
+      "founded": "1991-01-01",
+      "headquarters_city_code": "VRN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 16,
+    "fields": {
+      "airline_name": "Air Europa",
+      "airline_code": "996",
+      "founded": "1986-01-01",
+      "headquarters_city_code": "MAD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 17,
+    "fields": {
+      "airline_name": "Air France",
+      "airline_code": "057",
+      "founded": "1933-10-07",
+      "headquarters_city_code": "CDG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 18,
+    "fields": {
+      "airline_name": "Air India",
+      "airline_code": "098",
+      "founded": "1932-10-15",
+      "headquarters_city_code": "DEL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 19,
+    "fields": {
+      "airline_name": "Air India Express",
+      "airline_code": "409",
+      "founded": "2005-04-29",
+      "headquarters_city_code": "COK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 20,
+    "fields": {
+      "airline_name": "Air Macau",
+      "airline_code": "675",
+      "founded": "1994-09-13",
+      "headquarters_city_code": "MFM"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 21,
+    "fields": {
+      "airline_name": "Air Malta",
+      "airline_code": "643",
+      "founded": "1974-03-31",
+      "headquarters_city_code": "MLA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 22,
+    "fields": {
+      "airline_name": "Air Mauritius",
+      "airline_code": "239",
+      "founded": "1967-06-01",
+      "headquarters_city_code": "MRU"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 23,
+    "fields": {
+      "airline_name": "Air Namibia",
+      "airline_code": "156",
+      "founded": "1946-01-01",
+      "headquarters_city_code": "WDH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 24,
+    "fields": {
+      "airline_name": "Air New Zealand",
+      "airline_code": "086",
+      "founded": "1940-04-26",
+      "headquarters_city_code": "AKL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 25,
+    "fields": {
+      "airline_name": "Air North",
+      "airline_code": "837",
+      "founded": "1977-01-01",
+      "headquarters_city_code": "YXY"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 26,
+    "fields": {
+      "airline_name": "Air Seoul",
+      "airline_code": "988",
+      "founded": "2016-07-01",
+      "headquarters_city_code": "ICN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 27,
+    "fields": {
+      "airline_name": "Air Serbia",
+      "airline_code": "115",
+      "founded": "1927-06-17",
+      "headquarters_city_code": "BEG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 28,
+    "fields": {
+      "airline_name": "Air Tahiti Nui",
+      "airline_code": "244",
+      "founded": "1996-11-01",
+      "headquarters_city_code": "PPT"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 29,
+    "fields": {
+      "airline_name": "Air Transat",
+      "airline_code": "649",
+      "founded": "1986-12-01",
+      "headquarters_city_code": "YUL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 30,
+    "fields": {
+      "airline_name": "Air Vanuatu",
+      "airline_code": "218",
+      "founded": "1981-01-01",
+      "headquarters_city_code": "VLI"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 31,
+    "fields": {
+      "airline_name": "AirAsia",
+      "airline_code": "445",
+      "founded": "1993-12-08",
+      "headquarters_city_code": "KUL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 32,
+    "fields": {
+      "airline_name": "AirAsia X",
+      "airline_code": "445",
+      "founded": "2007-01-01",
+      "headquarters_city_code": "KUL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 33,
+    "fields": {
+      "airline_name": "Aircalin",
+      "airline_code": "501",
+      "founded": "1983-01-01",
+      "headquarters_city_code": "NOU"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 34,
+    "fields": {
+      "airline_name": "Alaska Airlines",
+      "airline_code": "027",
+      "founded": "1932-04-26",
+      "headquarters_city_code": "SEA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 35,
+    "fields": {
+      "airline_name": "Alitalia",
+      "airline_code": "055",
+      "founded": "1946-09-16",
+      "headquarters_city_code": "FCO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 36,
+    "fields": {
+      "airline_name": "Allegiant",
+      "airline_code": "890",
+      "founded": "1997-01-01",
+      "headquarters_city_code": "LAS"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 37,
+    "fields": {
+      "airline_name": "American Airlines",
+      "airline_code": "001",
+      "founded": "1926-04-15",
+      "headquarters_city_code": "DFW"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 38,
+    "fields": {
+      "airline_name": "ANA (All Nippon Airways)",
+      "airline_code": "205",
+      "founded": "1952-12-27",
+      "headquarters_city_code": "HND"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 39,
+    "fields": {
+      "airline_name": "Asiana Airlines",
+      "airline_code": "988",
+      "founded": "1988-02-17",
+      "headquarters_city_code": "ICN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 40,
+    "fields": {
+      "airline_name": "Austrian Airlines",
+      "airline_code": "257",
+      "founded": "1957-09-30",
+      "headquarters_city_code": "VIE"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 41,
+    "fields": {
+      "airline_name": "Azerbaijan Hava Yollary (AZAL)",
+      "airline_code": "771",
+      "founded": "1992-04-07",
+      "headquarters_city_code": "GYD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 42,
+    "fields": {
+      "airline_name": "Azores Airlines",
+      "airline_code": "710",
+      "founded": "1941-01-01",
+      "headquarters_city_code": "PDL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 43,
+    "fields": {
+      "airline_name": "Azul",
+      "airline_code": "739",
+      "founded": "2008-05-05",
+      "headquarters_city_code": "VCP"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 44,
+    "fields": {
+      "airline_name": "Bamboo Airways",
+      "airline_code": "893",
+      "founded": "2017-01-01",
+      "headquarters_city_code": "HAN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 45,
+    "fields": {
+      "airline_name": "Bangkok Airways",
+      "airline_code": "829",
+      "founded": "1968-01-01",
+      "headquarters_city_code": "BKK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 46,
+    "fields": {
+      "airline_name": "British Airways",
+      "airline_code": "125",
+      "founded": "1974-03-31",
+      "headquarters_city_code": "LHR"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 47,
+    "fields": {
+      "airline_name": "Brussels Airlines",
+      "airline_code": "881",
+      "founded": "2006-11-07",
+      "headquarters_city_code": "BRU"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 48,
+    "fields": {
+      "airline_name": "Caribbean Airlines",
+      "airline_code": "106",
+      "founded": "2006-09-27",
+      "headquarters_city_code": "POS"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 49,
+    "fields": {
+      "airline_name": "Cathay Dragon",
+      "airline_code": "043",
+      "founded": "1985-05-24",
+      "headquarters_city_code": "HKG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 50,
+    "fields": {
+      "airline_name": "Cathay Pacific",
+      "airline_code": "160",
+      "founded": "1946-09-24",
+      "headquarters_city_code": "HKG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 51,
+    "fields": {
+      "airline_name": "Cayman Airways",
+      "airline_code": "180",
+      "founded": "1968-01-01",
+      "headquarters_city_code": "GCM"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 52,
+    "fields": {
+      "airline_name": "CEBU Pacific Air",
+      "airline_code": "203",
+      "founded": "1996-03-26",
+      "headquarters_city_code": "MNL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 53,
+    "fields": {
+      "airline_name": "China Airlines",
+      "airline_code": "297",
+      "founded": "1959-12-16",
+      "headquarters_city_code": "TPE"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 54,
+    "fields": {
+      "airline_name": "China Eastern",
+      "airline_code": "781",
+      "founded": "1988-06-25",
+      "headquarters_city_code": "SHA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 55,
+    "fields": {
+      "airline_name": "China Southern",
+      "airline_code": "784",
+      "founded": "1988-01-01",
+      "headquarters_city_code": "CAN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 56,
+    "fields": {
+      "airline_name": "Condor",
+      "airline_code": "881",
+      "founded": "1955-12-21",
+      "headquarters_city_code": "FRA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 57,
+    "fields": {
+      "airline_name": "Copa Airlines",
+      "airline_code": "230",
+      "founded": "1947-06-06",
+      "headquarters_city_code": "PTY"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 58,
+    "fields": {
+      "airline_name": "Croatia Airlines",
+      "airline_code": "831",
+      "founded": "1989-07-20",
+      "headquarters_city_code": "ZAG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 59,
+    "fields": {
+      "airline_name": "Czech Airlines",
+      "airline_code": "064",
+      "founded": "1923-10-06",
+      "headquarters_city_code": "PRG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 60,
+    "fields": {
+      "airline_name": "Delta",
+      "airline_code": "006",
+      "founded": "1924-05-30",
+      "headquarters_city_code": "ATL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 61,
+    "fields": {
+      "airline_name": "easyJet",
+      "airline_code": "888",
+      "founded": "1995-01-01",
+      "headquarters_city_code": "LGW"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 62,
+    "fields": {
+      "airline_name": "Edelweiss Air",
+      "airline_code": "581",
+      "founded": "1995-01-01",
+      "headquarters_city_code": "ZRH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 63,
+    "fields": {
+      "airline_name": "Egyptair",
+      "airline_code": "077",
+      "founded": "1932-05-07",
+      "headquarters_city_code": "CAI"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 64,
+    "fields": {
+      "airline_name": "EL AL",
+      "airline_code": "114",
+      "founded": "1948-11-15",
+      "headquarters_city_code": "TLV"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 65,
+    "fields": {
+      "airline_name": "Emirates",
+      "airline_code": "176",
+      "founded": "1985-03-25",
+      "headquarters_city_code": "DXB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 66,
+    "fields": {
+      "airline_name": "Ethiopian Airlines",
+      "airline_code": "071",
+      "founded": "1945-12-21",
+      "headquarters_city_code": "ADD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 67,
+    "fields": {
+      "airline_name": "Etihad",
+      "airline_code": "607",
+      "founded": "2003-07-01",
+      "headquarters_city_code": "AUH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 68,
+    "fields": {
+      "airline_name": "Eurowings",
+      "airline_code": "104",
+      "founded": "1996-01-01",
+      "headquarters_city_code": "DUS"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 69,
+    "fields": {
+      "airline_name": "EVA Air",
+      "airline_code": "695",
+      "founded": "1989-03-08",
+      "headquarters_city_code": "TPE"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 70,
+    "fields": {
+      "airline_name": "Fiji Airways",
+      "airline_code": "815",
+      "founded": "1947-01-01",
+      "headquarters_city_code": "NAN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 71,
+    "fields": {
+      "airline_name": "Finnair",
+      "airline_code": "105",
+      "founded": "1923-11-01",
+      "headquarters_city_code": "HEL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 72,
+    "fields": {
+      "airline_name": "flydubai",
+      "airline_code": "141",
+      "founded": "2008-03-19",
+      "headquarters_city_code": "DXB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 73,
+    "fields": {
+      "airline_name": "FlyOne",
+      "airline_code": "655",
+      "founded": "2016-01-01",
+      "headquarters_city_code": "KIV"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 74,
+    "fields": {
+      "airline_name": "French bee",
+      "airline_code": "618",
+      "founded": "2016-01-01",
+      "headquarters_city_code": "ORY"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 75,
+    "fields": {
+      "airline_name": "Frontier",
+      "airline_code": "890",
+      "founded": "1994-02-08",
+      "headquarters_city_code": "DEN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 76,
+    "fields": {
+      "airline_name": "Garuda Indonesia",
+      "airline_code": "126",
+      "founded": "1949-01-26",
+      "headquarters_city_code": "CGK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 77,
+    "fields": {
+      "airline_name": "Gol",
+      "airline_code": "127",
+      "founded": "2001-01-01",
+      "headquarters_city_code": "SAO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 78,
+    "fields": {
+      "airline_name": "Gulf Air",
+      "airline_code": "072",
+      "founded": "1950-03-24",
+      "headquarters_city_code": "BAH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 79,
+    "fields": {
+      "airline_name": "Hainan Airlines",
+      "airline_code": "880",
+      "founded": "1993-01-01",
+      "headquarters_city_code": "HAK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 80,
+    "fields": {
+      "airline_name": "Hawaiian Airlines",
+      "airline_code": "173",
+      "founded": "1929-01-30",
+      "headquarters_city_code": "HNL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 81,
+    "fields": {
+      "airline_name": "Helvetic Airways",
+      "airline_code": "581",
+      "founded": "2003-01-01",
+      "headquarters_city_code": "ZRH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 82,
+    "fields": {
+      "airline_name": "HK Express",
+      "airline_code": "853",
+      "founded": "2004-01-01",
+      "headquarters_city_code": "HKG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 83,
+    "fields": {
+      "airline_name": "Hong Kong Airlines",
+      "airline_code": "851",
+      "founded": "2006-01-01",
+      "headquarters_city_code": "HKG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 84,
+    "fields": {
+      "airline_name": "Iberia",
+      "airline_code": "075",
+      "founded": "1927-06-28",
+      "headquarters_city_code": "MAD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 85,
+    "fields": {
+      "airline_name": "Icelandair",
+      "airline_code": "108",
+      "founded": "1937-01-01",
+      "headquarters_city_code": "KEF"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 86,
+    "fields": {
+      "airline_name": "IndiGo Airlines",
+      "airline_code": "409",
+      "founded": "2006-01-01",
+      "headquarters_city_code": "DEL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 87,
+    "fields": {
+      "airline_name": "InterJet",
+      "airline_code": "829",
+      "founded": "2005-01-01",
+      "headquarters_city_code": "MEX"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 88,
+    "fields": {
+      "airline_name": "Japan Airlines",
+      "airline_code": "131",
+      "founded": "1951-08-01",
+      "headquarters_city_code": "HND"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 89,
+    "fields": {
+      "airline_name": "Jeju Air",
+      "airline_code": "898",
+      "founded": "2005-01-01",
+      "headquarters_city_code": "CJU"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 90,
+    "fields": {
+      "airline_name": "Jet2",
+      "airline_code": "828",
+      "founded": "2003-01-01",
+      "headquarters_city_code": "LBA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 91,
+    "fields": {
+      "airline_name": "JetBlue",
+      "airline_code": "279",
+      "founded": "1998-08-01",
+      "headquarters_city_code": "JFK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 92,
+    "fields": {
+      "airline_name": "Jetstar",
+      "airline_code": "817",
+      "founded": "2003-01-01",
+      "headquarters_city_code": "MEL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 93,
+    "fields": {
+      "airline_name": "Jin Air",
+      "airline_code": "988",
+      "founded": "2008-01-01",
+      "headquarters_city_code": "ICN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 94,
+    "fields": {
+      "airline_name": "Kenya Airways",
+      "airline_code": "706",
+      "founded": "1977-01-22",
+      "headquarters_city_code": "NBO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 95,
+    "fields": {
+      "airline_name": "KLM",
+      "airline_code": "074",
+      "founded": "1919-10-07",
+      "headquarters_city_code": "AMS"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 96,
+    "fields": {
+      "airline_name": "Korean Air",
+      "airline_code": "180",
+      "founded": "1962-03-01",
+      "headquarters_city_code": "ICN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 97,
+    "fields": {
+      "airline_name": "Kulula",
+      "airline_code": "828",
+      "founded": "2001-01-01",
+      "headquarters_city_code": "JNB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 98,
+    "fields": {
+      "airline_name": "La Compagnie",
+      "airline_code": "618",
+      "founded": "2013-01-01",
+      "headquarters_city_code": "CDG"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 99,
+    "fields": {
+      "airline_name": "LATAM",
+      "airline_code": "045",
+      "founded": "2012-06-22",
+      "headquarters_city_code": "SCL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 100,
+    "fields": {
+      "airline_name": "Lion Airlines",
+      "airline_code": "893",
+      "founded": "1999-01-01",
+      "headquarters_city_code": "CGK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 101,
+    "fields": {
+      "airline_name": "LOT Polish Airlines",
+      "airline_code": "080",
+      "founded": "1929-01-01",
+      "headquarters_city_code": "WAW"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 102,
+    "fields": {
+      "airline_name": "Lufthansa",
+      "airline_code": "220",
+      "founded": "1953-01-06",
+      "headquarters_city_code": "FRA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 103,
+    "fields": {
+      "airline_name": "Luxair",
+      "airline_code": "149",
+      "founded": "1961-01-01",
+      "headquarters_city_code": "LUX"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 104,
+    "fields": {
+      "airline_name": "Malaysia Airlines",
+      "airline_code": "232",
+      "founded": "1947-05-01",
+      "headquarters_city_code": "KUL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 105,
+    "fields": {
+      "airline_name": "Mango",
+      "airline_code": "828",
+      "founded": "2006-01-01",
+      "headquarters_city_code": "JNB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 106,
+    "fields": {
+      "airline_name": "Middle East Airlines",
+      "airline_code": "076",
+      "founded": "1945-05-31",
+      "headquarters_city_code": "BEY"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 107,
+    "fields": {
+      "airline_name": "Nok Air",
+      "airline_code": "828",
+      "founded": "2004-01-01",
+      "headquarters_city_code": "BKK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 108,
+    "fields": {
+      "airline_name": "Nordwind Airlines",
+      "airline_code": "828",
+      "founded": "2008-01-01",
+      "headquarters_city_code": "SVO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 109,
+    "fields": {
+      "airline_name": "Norwegian Air International",
+      "airline_code": "828",
+      "founded": "2013-01-01",
+      "headquarters_city_code": "DUB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 110,
+    "fields": {
+      "airline_name": "Norwegian Air Shuttle",
+      "airline_code": "828",
+      "founded": "1993-01-01",
+      "headquarters_city_code": "OSL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 111,
+    "fields": {
+      "airline_name": "Norwegian Air Sweden",
+      "airline_code": "828",
+      "founded": "2013-01-01",
+      "headquarters_city_code": "STO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 112,
+    "fields": {
+      "airline_name": "Norwegian Air UK",
+      "airline_code": "828",
+      "founded": "2015-01-01",
+      "headquarters_city_code": "LGW"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 113,
+    "fields": {
+      "airline_name": "Oman Air",
+      "airline_code": "909",
+      "founded": "1993-01-01",
+      "headquarters_city_code": "MCT"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 114,
+    "fields": {
+      "airline_name": "Pakistan International Airlines",
+      "airline_code": "214",
+      "founded": "1955-10-29",
+      "headquarters_city_code": "KHI"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 115,
+    "fields": {
+      "airline_name": "Peach",
+      "airline_code": "828",
+      "founded": "2011-01-01",
+      "headquarters_city_code": "KIX"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 116,
+    "fields": {
+      "airline_name": "Pegasus Airlines",
+      "airline_code": "828",
+      "founded": "1990-01-01",
+      "headquarters_city_code": "SAW"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 117,
+    "fields": {
+      "airline_name": "Philippine Airlines",
+      "airline_code": "079",
+      "founded": "1941-02-26",
+      "headquarters_city_code": "MNL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 118,
+    "fields": {
+      "airline_name": "Porter",
+      "airline_code": "828",
+      "founded": "2006-01-01",
+      "headquarters_city_code": "YTZ"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 119,
+    "fields": {
+      "airline_name": "Qantas",
+      "airline_code": "081",
+      "founded": "1920-11-16",
+      "headquarters_city_code": "SYD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 120,
+    "fields": {
+      "airline_name": "Qatar Airways",
+      "airline_code": "157",
+      "founded": "1993-11-22",
+      "headquarters_city_code": "DOH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 121,
+    "fields": {
+      "airline_name": "Regional Express",
+      "airline_code": "828",
+      "founded": "2002-01-01",
+      "headquarters_city_code": "SYD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 122,
+    "fields": {
+      "airline_name": "Rossiya - Russian Airlines",
+      "airline_code": "828",
+      "founded": "1934-01-01",
+      "headquarters_city_code": "LED"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 123,
+    "fields": {
+      "airline_name": "Royal Air Maroc",
+      "airline_code": "147",
+      "founded": "1957-06-28",
+      "headquarters_city_code": "CMN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 124,
+    "fields": {
+      "airline_name": "Royal Brunei",
+      "airline_code": "672",
+      "founded": "1974-11-18",
+      "headquarters_city_code": "BWN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 125,
+    "fields": {
+      "airline_name": "Royal Jordanian",
+      "airline_code": "512",
+      "founded": "1963-12-09",
+      "headquarters_city_code": "AMM"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 126,
+    "fields": {
+      "airline_name": "RwandAir",
+      "airline_code": "459",
+      "founded": "2002-01-01",
+      "headquarters_city_code": "KGL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 127,
+    "fields": {
+      "airline_name": "Ryanair",
+      "airline_code": "888",
+      "founded": "1984-01-01",
+      "headquarters_city_code": "DUB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 128,
+    "fields": {
+      "airline_name": "S7 Airlines",
+      "airline_code": "421",
+      "founded": "1957-01-01",
+      "headquarters_city_code": "OVB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 129,
+    "fields": {
+      "airline_name": "SAS",
+      "airline_code": "117",
+      "founded": "1946-08-01",
+      "headquarters_city_code": "STO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 130,
+    "fields": {
+      "airline_name": "Saudia",
+      "airline_code": "065",
+      "founded": "1945-09-27",
+      "headquarters_city_code": "JED"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 131,
+    "fields": {
+      "airline_name": "Scoot Airlines",
+      "airline_code": "828",
+      "founded": "2011-01-01",
+      "headquarters_city_code": "SIN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 132,
+    "fields": {
+      "airline_name": "Shanghai Airlines",
+      "airline_code": "774",
+      "founded": "1985-01-01",
+      "headquarters_city_code": "SHA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 133,
+    "fields": {
+      "airline_name": "Silkair",
+      "airline_code": "828",
+      "founded": "1989-01-01",
+      "headquarters_city_code": "SIN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 134,
+    "fields": {
+      "airline_name": "Silver",
+      "airline_code": "828",
+      "founded": "2016-01-01",
+      "headquarters_city_code": "MCO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 135,
+    "fields": {
+      "airline_name": "Singapore Airlines",
+      "airline_code": "618",
+      "founded": "1972-01-01",
+      "headquarters_city_code": "SIN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 136,
+    "fields": {
+      "airline_name": "Skylanes",
+      "airline_code": "828",
+      "founded": "2016-01-01",
+      "headquarters_city_code": "LIM"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 137,
+    "fields": {
+      "airline_name": "South African Airways",
+      "airline_code": "083",
+      "founded": "1934-02-01",
+      "headquarters_city_code": "JNB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 138,
+    "fields": {
+      "airline_name": "Southwest",
+      "airline_code": "828",
+      "founded": "1967-03-15",
+      "headquarters_city_code": "DAL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 139,
+    "fields": {
+      "airline_name": "SpiceJet",
+      "airline_code": "828",
+      "founded": "2005-01-01",
+      "headquarters_city_code": "DEL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 140,
+    "fields": {
+      "airline_name": "Spirit",
+      "airline_code": "828",
+      "founded": "1980-01-01",
+      "headquarters_city_code": "MIA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 141,
+    "fields": {
+      "airline_name": "Spring Airlines",
+      "airline_code": "828",
+      "founded": "2005-01-01",
+      "headquarters_city_code": "SHA"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 142,
+    "fields": {
+      "airline_name": "Spring Japan",
+      "airline_code": "828",
+      "founded": "2014-01-01",
+      "headquarters_city_code": "NRT"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 143,
+    "fields": {
+      "airline_name": "SriLankan Airlines",
+      "airline_code": "603",
+      "founded": "1979-01-01",
+      "headquarters_city_code": "CMB"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 144,
+    "fields": {
+      "airline_name": "Sun Country",
+      "airline_code": "828",
+      "founded": "1982-01-01",
+      "headquarters_city_code": "MSP"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 145,
+    "fields": {
+      "airline_name": "Sunclass Airlines",
+      "airline_code": "828",
+      "founded": "2018-01-01",
+      "headquarters_city_code": "CPH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 146,
+    "fields": {
+      "airline_name": "Sunwing",
+      "airline_code": "828",
+      "founded": "2005-01-01",
+      "headquarters_city_code": "YYZ"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 147,
+    "fields": {
+      "airline_name": "SWISS",
+      "airline_code": "724",
+      "founded": "2002-03-31",
+      "headquarters_city_code": "ZRH"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 148,
+    "fields": {
+      "airline_name": "Swoop",
+      "airline_code": "828",
+      "founded": "2018-01-01",
+      "headquarters_city_code": "YYC"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 149,
+    "fields": {
+      "airline_name": "TAAG",
+      "airline_code": "118",
+      "founded": "1938-01-01",
+      "headquarters_city_code": "LAD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 150,
+    "fields": {
+      "airline_name": "TACA",
+      "airline_code": "202",
+      "founded": "1931-01-01",
+      "headquarters_city_code": "SAL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 151,
+    "fields": {
+      "airline_name": "TAP Portugal",
+      "airline_code": "047",
+      "founded": "1945-03-14",
+      "headquarters_city_code": "LIS"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 152,
+    "fields": {
+      "airline_name": "THAI",
+      "airline_code": "217",
+      "founded": "1960-05-01",
+      "headquarters_city_code": "BKK"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 153,
+    "fields": {
+      "airline_name": "tigerair Australia",
+      "airline_code": "828",
+      "founded": "2007-01-01",
+      "headquarters_city_code": "MEL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 154,
+    "fields": {
+      "airline_name": "Transavia Airlines",
+      "airline_code": "828",
+      "founded": "1966-01-01",
+      "headquarters_city_code": "AMS"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 155,
+    "fields": {
+      "airline_name": "TUI UK",
+      "airline_code": "828",
+      "founded": "2003-01-01",
+      "headquarters_city_code": "LGW"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 156,
+    "fields": {
+      "airline_name": "TUIfly",
+      "airline_code": "828",
+      "founded": "2007-01-01",
+      "headquarters_city_code": "HAJ"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 157,
+    "fields": {
+      "airline_name": "Tunis Air",
+      "airline_code": "199",
+      "founded": "1948-01-01",
+      "headquarters_city_code": "TUN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 158,
+    "fields": {
+      "airline_name": "Turkish Airlines",
+      "airline_code": "235",
+      "founded": "1933-05-20",
+      "headquarters_city_code": "IST"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 159,
+    "fields": {
+      "airline_name": "Ukraine International",
+      "airline_code": "566",
+      "founded": "1992-10-01",
+      "headquarters_city_code": "KBP"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 160,
+    "fields": {
+      "airline_name": "United",
+      "airline_code": "016",
+      "founded": "1926-04-06",
+      "headquarters_city_code": "ORD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 161,
+    "fields": {
+      "airline_name": "Ural Airlines",
+      "airline_code": "828",
+      "founded": "1943-01-01",
+      "headquarters_city_code": "SVX"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 162,
+    "fields": {
+      "airline_name": "UTair Aviation",
+      "airline_code": "828",
+      "founded": "1967-01-01",
+      "headquarters_city_code": "SVO"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 163,
+    "fields": {
+      "airline_name": "Uzbekistan Airways",
+      "airline_code": "250",
+      "founded": "1992-01-28",
+      "headquarters_city_code": "TAS"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 164,
+    "fields": {
+      "airline_name": "Vietnam Airlines",
+      "airline_code": "738",
+      "founded": "1956-01-01",
+      "headquarters_city_code": "HAN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 165,
+    "fields": {
+      "airline_name": "Virgin Atlantic",
+      "airline_code": "932",
+      "founded": "1984-01-01",
+      "headquarters_city_code": "LHR"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 166,
+    "fields": {
+      "airline_name": "Virgin Australia",
+      "airline_code": "795",
+      "founded": "2000-01-01",
+      "headquarters_city_code": "BNE"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 167,
+    "fields": {
+      "airline_name": "Vistara",
+      "airline_code": "828",
+      "founded": "2015-01-01",
+      "headquarters_city_code": "DEL"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 168,
+    "fields": {
+      "airline_name": "Viva Aerobus",
+      "airline_code": "828",
+      "founded": "2006-01-01",
+      "headquarters_city_code": "MTY"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 169,
+    "fields": {
+      "airline_name": "Volaris",
+      "airline_code": "828",
+      "founded": "2006-01-01",
+      "headquarters_city_code": "MEX"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 170,
+    "fields": {
+      "airline_name": "Volotea",
+      "airline_code": "828",
+      "founded": "2011-01-01",
+      "headquarters_city_code": "VCE"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 171,
+    "fields": {
+      "airline_name": "Vueling Airlines",
+      "airline_code": "828",
+      "founded": "2004-01-01",
+      "headquarters_city_code": "BCN"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 172,
+    "fields": {
+      "airline_name": "WestJet",
+      "airline_code": "838",
+      "founded": "1996-01-01",
+      "headquarters_city_code": "YYC"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 173,
+    "fields": {
+      "airline_name": "Wizzair",
+      "airline_code": "828",
+      "founded": "2003-01-01",
+      "headquarters_city_code": "BUD"
+    }
+  },
+  {
+    "model": "airlines.airline",
+    "pk": 174,
+    "fields": {
+      "airline_name": "Xiamen Airlines",
+      "airline_code": "731",
+      "founded": "1984-01-01",
+      "headquarters_city_code": "XMN"
+    }
+  }
+]
