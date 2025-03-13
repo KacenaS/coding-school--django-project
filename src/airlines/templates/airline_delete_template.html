@@ -16,7 +16,7 @@
             <!-- Alert Message -->
             <div class="alert alert-warning text-center" role="alert">
                 <h5 class="fw-bold">Are you sure you want to delete this airline record?</h5>
-                <p class="mb-0"><strong>{{ airline.airline_name }} {{ airline.airline_code }}</strong></p>
+                <b><p class="mb-0"><strong>{{ airline.airline_name }} {{ airline.airline_code }}</strong></p></b>
             </div>
 
             <!-- Form -->
@@ -26,7 +26,7 @@
                     <form method="post" action="{% url 'airlines:delete-view' airline.pk %}">
                         {% csrf_token %}
                         <button type="submit" class="btn btn-danger btn-lg px-4">Delete</button>
-                        <a href="{% url 'airlines:list-view' %}" class="btn btn-danger btn-lg px-4">Back</a>
+                        <a href="{% url 'airlines:list-view' %}" class="btn btn-secondary btn-lg px-4">Back</a>
                     </form>
                 </div>
             </div>

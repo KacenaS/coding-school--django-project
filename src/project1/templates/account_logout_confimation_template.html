@@ -1,0 +1,14 @@
+{% extends 'base_with_bootstrap.html' %}
+{% load bootstrap5 %}
+
+{% block bootstrap5_title %}Logout{% endblock %}
+
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+<div class="row">
+        <div class="col">
+            You have been logged out <b>{{ logged_user }}</b>
+        </div>
+    </div>
+{% endblock %}

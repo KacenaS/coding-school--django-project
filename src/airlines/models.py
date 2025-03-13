@@ -25,7 +25,7 @@ class Airline(models.Model):
 
     def get_absolute_url(self):
         """Returns the url to access a detail page of this model"""
-        return reverse('airlines:detail-view', kwargs={'pk': self.pk})
+        return reverse_lazy('airlines:detail-view', kwargs={'pk': self.pk})
 
     def alliance_list_as_string(self):
         """Returns a string representation of alliance instances"""
@@ -37,16 +37,20 @@ class Airline(models.Model):
     """
     def airline_code_converter(self):
         airlines = Airline.objects.all()
+        
         for airline in airlines:
+            airline_code = airline.airline_code
             # Convert airline_code to a string
-            code = str(airline.airline_code)
+            code_str = str(airline_code)
 
             # Check if the length is 2
-            if len(code) == 2:
+            if len(code_str) == 2:
                 # Add a leading zero
-                airline.airline_code = "0" + code
-            return airline.airline_code
-            """
+                airline.airline_code =  "0" + code_str
+                airline.save()
+    """
+
+
 
     def __str__(self):
         return self.airline_name

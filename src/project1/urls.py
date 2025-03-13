@@ -17,9 +17,18 @@ Including another URLconf
 from airlines.views import  airline_home_page
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import views as auth_views
+from . import views
+#from project1.views import AccountLoginView, AccountLogoutConfirmationView, AccountLogoutYesNoView, AccountLogoutView
 
 urlpatterns = [
     path("", airline_home_page, name="home"),
     path("admin/", admin.site.urls),
-    path("airlines/", include("airlines.urls")),  # Include airlines app URLs
+    path("airlines/", include("airlines.urls")),
+    # LOGIN LOGOUT
+    #path('login-confirmation/', AccountLoginConfirmationView.as_view(), name='login-confirmation'),
+    #path('logout-confirmation/', AccountLogoutConfirmationView.as_view(), name='logout-confirmation'),
+    #path('logout-yes-no-confirmation/', AccountLogoutYesNoView.as_view(), name='logout-yes-no-confirmation'),
+    path('login/', views.login_user, name='login'),
+    path('logout/', views.logout_user, name='logout')
 ]

@@ -1,0 +1,18 @@
+<hr>
+<div class="row">
+    <div class="col-3">
+        User:&nbsp;&nbsp;
+        {% if user.is_authenticated %}
+            {{ user }}
+        {% else %}
+            (Not logged in)
+        {% endif %}
+    </div>
+    <div class="col-2">
+       <a href='{% url "login" %}' class="btn btn-secondary btn-sm">Login</a>
+    </div>
+    <div class="col-2">
+        <a href='{% url "logout" %}'class="btn btn-secondary btn-sm">Logout</a>
+    </div>
+</div>
+<hr>

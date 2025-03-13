@@ -19,6 +19,17 @@ class AirlineModelForm(forms.ModelForm):
             "headquarters_city_code": "Enter three letter city code",
         }
 
+    def clean(self):
+        cleaned_data = super().clean()
+
+        airline_name = cleaned_data.get("airline_name")
+
+        dupe_airline = Airline.objects.filter(airline_name=airline_name).exists()
+        if dupe_airline:
+            raise ValidationError("Airline name already exists")
+
+        return cleaned_data
+
 class AirportModelForm(forms.ModelForm):
     class Meta:
         model = Airport
@@ -41,12 +52,15 @@ class AirportModelForm(forms.ModelForm):
         }
 
     def clean(self):
-        """Validate if user is entering exactly 3 characters"""
         cleaned_data = super().clean()
-        city_code = cleaned_data.get("city_code")
 
-        if len(city_code) != 3:
-            raise ValidationError('Entry must be exactly 3 characters.')
+        airport_name = cleaned_data.get("airport_name")
+
+        dupe_airline = Airport.objects.filter(airport_name=airport_name).exists()
+        if dupe_airline:
+            raise ValidationError("Airport name already exists")
+
+        return cleaned_data
 
 
 class JustButtonForm(forms.Form):

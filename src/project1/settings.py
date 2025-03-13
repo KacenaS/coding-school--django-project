@@ -60,7 +60,9 @@ ROOT_URLCONF = "project1.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            BASE_DIR / 'project1/templates',
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -128,7 +130,11 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+LOGIN_REDIRECT_URL = '/login/'
+LOGOUT_REDIRECT_URL = '/logout/'
+
 # My fixtures
 FIXTURE_DIRS = [
     os.path.join(BASE_DIR, 'fixtures'),
 ]
+

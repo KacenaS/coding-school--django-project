@@ -5,6 +5,8 @@ from django.db.models import Q
 import airlines
 from django.http import HttpResponse
 from django.urls import reverse_lazy
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from airlines.forms import AirlineModelForm, AirportModelForm, JustButtonForm
 
@@ -24,9 +26,6 @@ class AirlinesListingView(ListView):
     def get_queryset(self):
         queryset = super().get_queryset()
 
-        # test if it is passing the parameters
-        print(self.kwargs)
-
         start_str = self.request.GET.get('start_str')
         if start_str:
             queryset = queryset.filter(
@@ -36,13 +35,12 @@ class AirlinesListingView(ListView):
 
         return queryset
 
-
 class AirlinesDetailView(DetailView):
     template_name = "airline_detail_template.html"
     model = Airline
     context_object_name = "airline"
 
-class AirlinesCreateView(CreateView):
+class AirlinesCreateView(LoginRequiredMixin,CreateView):
     template_name = "airline_create_template.html"
     model = Airline
     form_class = AirlineModelForm

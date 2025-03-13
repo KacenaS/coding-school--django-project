@@ -1,0 +1,19 @@
+{% extends 'base_with_bootstrap.html' %}
+{% load bootstrap5 %}
+
+{% block bootstrap5_title %}Yes No Logout{% endblock %}
+
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col">
+            Are you sure you want to logout?
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            By clicking <a href="{% url 'logout' %}?userid={{ user.pk }}">link</a> you will be logged out
+        </div>
+    </div>
+{% endblock %}
