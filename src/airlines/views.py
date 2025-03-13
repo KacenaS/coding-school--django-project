@@ -9,6 +9,8 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from airlines.forms import AirlineModelForm, AirportModelForm, JustButtonForm
+from pyexpat.errors import messages
+from django.contrib import messages
 
 
 #------------------------------------------------------------------------
@@ -44,21 +46,42 @@ class AirlinesCreateView(LoginRequiredMixin,CreateView):
     template_name = "airline_create_template.html"
     model = Airline
     form_class = AirlineModelForm
+    login_url = reverse_lazy('login')
 
     def get_success_url(self):
         return self.object.get_absolute_url()
 
-class AirlineDeleteView(DeleteView):
+    def dispatch(self, request, *args, **kwargs):
+        """Gives error message when not logged in"""
+        if not request.user.is_authenticated:
+            messages.error(request, message='You have to login to Create a new Airline.')
+        return super().dispatch(request, *args, **kwargs)
+
+class AirlineDeleteView(LoginRequiredMixin,DeleteView):
     template_name = "airline_delete_template.html"
     model = Airline
     context_object_name = "airline"
     success_url = reverse_lazy("airlines:list-view")
     form_class = JustButtonForm
+    login_url = reverse_lazy('login')
 
-class AirlinesUpdateView(UpdateView):
+    def dispatch(self, request, *args, **kwargs):
+        """Gives error message when not logged in"""
+        if not request.user.is_authenticated:
+            messages.error(request, message='You have to login to Delete this Airline.')
+        return super().dispatch(request, *args, **kwargs)
+
+class AirlinesUpdateView(LoginRequiredMixin,UpdateView):
     template_name = "airline_update_template.html"
     model = Airline
     form_class = AirlineModelForm
+    login_url = reverse_lazy('login')
+
+    def dispatch(self, request, *args, **kwargs):
+        """Gives error message when not logged in"""
+        if not request.user.is_authenticated:
+            messages.error(request, message='You have to login to Update Airlines.')
+        return super().dispatch(request, *args, **kwargs)
 
     def get_success_url(self):
         return self.object.get_absolute_url()
@@ -88,23 +111,45 @@ class AirportDetailView(DetailView):
     model = Airport
     context_object_name = "airport"
 
-class AirportsCreateView(CreateView):
+class AirportsCreateView(LoginRequiredMixin, CreateView):
     template_name = "airport_create_template.html"
     form_class = AirportModelForm
+    login_url = reverse_lazy('login')
+
+    def dispatch(self, request, *args, **kwargs):
+        """Gives error message when not logged in"""
+        if not request.user.is_authenticated:
+            messages.error(request, message='You have to login to Create a new Airport.')
+        return super().dispatch(request, *args, **kwargs)
+
 
     def get_success_url(self):
         return self.object.get_absolute_url()
 
-class AirportDeleteView(DeleteView):
+class AirportDeleteView(LoginRequiredMixin, DeleteView):
     template_name = "airport_delete_view.html"
     model = Airport
     context_object_name = "airport"
     success_url = reverse_lazy("airlines:airport-list-view")
+    login_url = reverse_lazy('login')
 
-class AirportsUpdateView(UpdateView):
+    def dispatch(self, request, *args, **kwargs):
+        """Gives error message when not logged in"""
+        if not request.user.is_authenticated:
+            messages.error(request, message='You have to login to Delete Airport.')
+        return super().dispatch(request, *args, **kwargs)
+
+class AirportsUpdateView(LoginRequiredMixin, UpdateView):
     template_name = "airport_update_view.html"
     model = Airport
     form_class = AirportModelForm
+    login_url = reverse_lazy('login')
+
+    def dispatch(self, request, *args, **kwargs):
+        """Gives error message when not logged in"""
+        if not request.user.is_authenticated:
+            messages.error(request, message='You have to login to Update Airport.')
+        return super().dispatch(request, *args, **kwargs)
 
     def get_success_url(self):
         return self.object.get_absolute_url()

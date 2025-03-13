@@ -3,20 +3,33 @@
 
 {% block bootstrap5_title %}Login{% endblock %}
 
-{% block title %}Login{% endblock %}
+{% block title %}
+    Login
+    <!-- Home button -->
+    <div class="d-flex justify-content-end">
+        <a href="{% url 'home' %}" class="btn btn-dark me-2">Home Page</a>
+    </div>
+
+{% endblock %}
 
 {% block content %}
     <form method="post" action="{% url 'login' %}">
         {% csrf_token %}
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">User name</label>
-            <input type="text" class="form-control" name = "username", placeholder="Enter your username">
+            <input type="text" class="form-control" name = "username", placeholder="Enter your username" style="width: 500px;">
         </div>
             <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" name="password", placeholder="Enter your password">
+            <input type="password" class="form-control" name="password", placeholder="Enter your password" style="width: 500px;">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
 
     </form>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
 {% endblock %}

@@ -1,6 +1,6 @@
 <hr>
-<div class="row">
-    <div class="col-3">
+<div class="row d-flex justify-content-between align-items-center">
+    <div class="col-auto">
         User:&nbsp;&nbsp;
         {% if user.is_authenticated %}
             {{ user }}
@@ -8,11 +8,9 @@
             (Not logged in)
         {% endif %}
     </div>
-    <div class="col-2">
-       <a href='{% url "login" %}' class="btn btn-secondary btn-sm">Login</a>
-    </div>
-    <div class="col-2">
-        <a href='{% url "logout" %}'class="btn btn-secondary btn-sm">Logout</a>
+    <div class="col-4 text-end">
+        <a href='{% url "login" %}' class="btn btn-secondary btn-sm">Login</a>
+        <a href='{% url "logout" %}' class="btn btn-secondary btn-sm ms-2">Logout</a>
     </div>
 </div>
 <hr>

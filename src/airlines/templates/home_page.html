@@ -3,23 +3,16 @@
 
 <title>{% block bootstrap5_title %}Home{% endblock %}</title>
 
-{% block title %}Welcome to the Airlines List Page!{% endblock %}
+{% block title %}
+    Welcome to the Airlines List Page!
+        <!-- Menu buttons -->
+    <div class="d-flex justify-content-end">
+        <a href="{% url 'airlines:list-view' %}" class="btn btn-dark me-2">Airlines List</a>
+        <a href="{% url 'airlines:airport-list-view' %}" class="btn btn-success">Airports List</a>
+    </div>
+{% endblock %}
 
 {% block content %}
     <!-- Text -->
     {% include 'snippets/airline_info1.html' %}
-    <!-- Menu buttons -->
-    <div class="d-flex">
-        <a href="{% url 'airlines:list-view' %}" class="btn btn-dark me-2">Airlines List</a>
-        <a href="{% url 'airlines:airport-list-view' %}" class="btn btn-success">Airports List</a>
-    </div>
-    {%  if messages %}
-        {% for message in messages %}
-                   <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                       {{ message }}
-                       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                   </div>
-        {%  endfor %}
-    {% endif %}
-
 {% endblock %}

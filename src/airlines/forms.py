@@ -12,6 +12,9 @@ class AirlineModelForm(forms.ModelForm):
             "founded": "Founded",
             "headquarters_city_code": "Headquarters city code",
         }
+        widgets = {
+            'alliance': forms.SelectMultiple(attrs={'class': 'form-control'})
+        }
         help_texts = {
             "airline_name": "Enter full airline name",
             "airline_code": "Enter three digit airline code",
@@ -19,16 +22,15 @@ class AirlineModelForm(forms.ModelForm):
             "headquarters_city_code": "Enter three letter city code",
         }
 
-    def clean(self):
-        cleaned_data = super().clean()
+    def clean_airline_name(self):
+        """Checking for duplicate data"""
+        airline_name = self.cleaned_data.get('airline_name')
 
-        airline_name = cleaned_data.get("airline_name")
-
-        dupe_airline = Airline.objects.filter(airline_name=airline_name).exists()
+        dupe_airline = Airline.objects.filter(airline_name=airline_name).exclude(pk=self.instance.pk).exists()
         if dupe_airline:
             raise ValidationError("Airline name already exists")
 
-        return cleaned_data
+        return airline_name
 
 class AirportModelForm(forms.ModelForm):
     class Meta:
@@ -40,9 +42,6 @@ class AirportModelForm(forms.ModelForm):
             "city_code": "City code",
             "airport_code": "Airport code",
         }
-        widgets = {
-            'alliances': forms.SelectMultiple(attrs={'class': 'form-control'}),
-        }
         help_texts = {
             "airport_name": "Enter full airport name",
             "country_code": "Enter two letter country code",
@@ -51,16 +50,16 @@ class AirportModelForm(forms.ModelForm):
 
         }
 
-    def clean(self):
-        cleaned_data = super().clean()
+    def clean_airport_name(self):
+        """Checking for duplicate data"""
 
-        airport_name = cleaned_data.get("airport_name")
+        airport_name = self.cleaned_data.get("airport_name")
 
-        dupe_airline = Airport.objects.filter(airport_name=airport_name).exists()
+        dupe_airline = Airport.objects.filter(airport_name=airport_name).exclude(pk=self.instance.pk).exists()
         if dupe_airline:
             raise ValidationError("Airport name already exists")
 
-        return cleaned_data
+        return airport_name
 
 
 class JustButtonForm(forms.Form):

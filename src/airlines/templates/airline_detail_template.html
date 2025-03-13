@@ -24,6 +24,9 @@
         <div class="col">
             <b>Headquarters city code: </b>
         </div>
+        <div class="col">
+            <b>Alliance: </b>
+        </div>
     </div>
     <div class="row">
         <div class="col">
@@ -38,6 +41,13 @@
         <div class="col">
             {{ airline.headquarters_city_code }}
         </div>
+        <div class="col">
+            {% for alliance in airline.alliance.all %}
+	            {{ alliance.name }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+	            <span>No alliance</span>
+            {% endfor %}
+         </div>
     </div>
     <hr>
     <!-- Update Delete buttons -->
@@ -47,5 +57,10 @@
             <a href="{% url 'airlines:delete-view' airline.pk %}" class="btn btn-danger">Delete</a>
         </div>
     </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 
 {% endblock %}
