@@ -25,5 +25,5 @@ def login_user(request):
 
 def logout_user(request):
     logout(request)
-    messages.success(request, message="You have been logged out.")
+    messages.error(request, message="You have been logged out.")
     return HttpResponseRedirect(reverse_lazy('home'))
